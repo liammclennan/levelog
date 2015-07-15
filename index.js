@@ -22,6 +22,7 @@ app.post('/', function (req,res) {
         if (err) {
             console.log('Oh my!', err);
             res.send(500, JSON.stringify(err));
+            return;
         }
         res.sendStatus(200);
     });
